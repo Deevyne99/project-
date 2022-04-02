@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css">
+
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="header">
+        <h3>Welcome to your dashboard!!!</h3>
+    </div>
+    <button class="menu"><i class="fas fa-bars"></i></button>
+    
+    <div class="nav">
+        <ul class="nav-bar">
+            <li>
+                <a href="/user">Home</a>
+            </li>
+            <li>
+                <a href="/user/create">Create Account</a>
+            </li>
+            <li>
+                <a href="/user/transact">View Transaction</a>
+            </li>
+            <li>
+                <a href="/user/profile">view Profile</a>
+            </li>
+            <li>
+                <button class="log-out">logout</button>
+            </li>
+        </ul>
+    </div>
+    <div class="profile">
+        <img class="profile-image" src="./img/profile-photo.png" alt="">
+    </div>
+    <div class="table">
+        <table>
+            <caption>Transaction History</caption>
+            <thead>
+                <tr>
+                    <th>Invoice</th>
+                    <th>Account NO.</th>
+                    <th>Account </th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p class="status status-unpaid"></p>
+                        </p>
+                    </td>
+                    <td class="amount"></td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p class="status status-pending"></p>
+                        </p>
+                    </td>
+                    <td class="amount"></td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p class="status status-paid"></p>
+    
+                    </td>
+                    <td class="amount"></td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p class="status status-unpaid"></p>
+    
+                    </td>
+                    <td class="amount"></td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <p class="status status-paid"></p>
+                    </td>
+                    <td class="amount"></td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+
+    
+
+    <script src="appp.js"></script>
+</body>
+</html>

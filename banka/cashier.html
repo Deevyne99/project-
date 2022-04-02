@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="header">
+        <h3>Welcome to your dashboard!!!</h3>
+    </div>
+    
+    <button class="menu"><i class="fas fa-bars"></i></button>
+    
+    
+    <div class="nav">
+        <ul class="nav-bar">
+            <li>
+                <a href="cashier.html">Home</a>
+            </li>
+            <li>
+                <a href="credit%20.html">Credit Account</a>
+            </li>
+            <li>
+                <a href="debit.html">Debit Account</a>
+            </li>
+            <li>
+                <a href="profile.html">View Profile</a>
+            </li>
+            <li>
+                <button class="log-out">Logout</button>
+            </li>
+    
+        </ul>
+    </div>
+    <div class="profile">
+        <img class="profile-image" src="./img/profile-photo.png" alt="">
+    </div>
+    <div class="table">
+        <table>
+            <caption>Transaction History</caption>
+            <thead>
+                <tr>
+                    <th>Invoice</th>
+                    <th>Bank</th>
+                    <th>Account </th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td>Zenith</td>
+                    <td>2345096744</td>
+                    <td>1/5/2022</td>
+                    <td>
+                        <p class="status status-unpaid">Unpaid</p>
+                        </p>
+                    </td>
+                    <td class="amount">$520.18</td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td>Access</td>
+                    <td>3005096744</td>
+                    <td>1/5/2022</td>
+                    <td>
+                        <p class="status status-pending">Pending</p>
+                        </p>
+                    </td>
+                    <td class="amount">$520.18</td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td>Unity</td>
+                    <td>2345096000</td>
+                    <td>1/5/2022</td>
+                    <td>
+                        <p class="status status-paid">Paid</p>
+    
+                    </td>
+                    <td class="amount">$420.18</td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td>Kuda</td>
+                    <td>2345050744</td>
+                    <td>1/5/2022</td>
+                    <td>
+                        <p class="status status-unpaid">Unpaid</p>
+    
+                    </td>
+                    <td class="amount">$320.18</td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td>First</td>
+                    <td>2345096744</td>
+                    <td>1/5/2022</td>
+                    <td>
+                        <p class="status status-paid">Paid</p>
+                    </td>
+                    <td class="amount">$720.18</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navigation {
+  display: flex;
+}
+.header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #2271ff;
+  color: #fff;
+  height: 50px;
+}
+.menu {
+  display: none;
+}
+
+.nav {
+  margin: 30px auto;
+  width: 100%;
+}
+.nav-bar {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  cursor: pointer;
+}
+.nav-bar li {
+  list-style: none;
+}
+.nav-bar li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  color: #777;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.nav-bar li a:hover {
+  color: #fff;
+  background: #4481eb;
+  transition: 0.3s all linear;
+  padding-left: 1.5rem;
+}
+.container-cont {
+  margin-top: 30px;
+}
+.log-out {
+  padding: 12px;
+  background-color: #4481eb;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.acct {
+  height: 150px;
+  width: 450px;
+  background: #2271ff;
+  margin: 0 auto;
+  border-radius: 18px;
+  margin-bottom: 30px;
+}
+.balance-text {
+  padding: 30px 60px 0;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+.show-money {
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin: auto 140px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/******************************************create account page********************************/
+
+/******************************************create account page********************************/
+
+/******************************************create account page********************************/
+.form {
+  margin: 20px auto;
+  height: 550px;
+  width: 700px;
+  background-color: #4481eb;
+  border-radius: 18px;
+  padding: 30px 10px 40px 20px;
+}
+.entry {
+  margin-top: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 15px;
+  border: 2px #2271ff;
+}
+.entry::placeholder {
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.select {
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px #2271ff;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+label {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+.entry.date {
+  margin-left: 10px;
+  border: 2px #2271ff;
+}
+.label {
+  padding-top: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: left;
+}
+.header-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.acct-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create-acct {
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: #4481eb;
+  color: #fff;
+  border: 2px #fff solid;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.9s ease-in-out;
+}
+.create-acct:hover {
+  background-color: #2273ff;
+}
+
+/*---------------------------------------------TRANSACTION PAGE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.table {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  background: #f9fbff;
+  color: #4f546c;
+}
+table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  text-align: left;
+  overflow: hidden;
+}
+thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: #2271ff;
+  color: #fff;
+}
+th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+td {
+  padding: 1rem 2rem;
+}
+a {
+  text-decoration: none;
+}
+.status {
+  border-radius: 0.2rem;
+  background-color: red;
+  padding: 0.2rem 0.1rem;
+  text-align: center;
+}
+.status.status-pending {
+  background: #fff0c2;
+  color: #a68b00;
+}
+
+.status.status-unpaid {
+  background: #ffcdd2;
+  color: #c62828;
+}
+
+.status.status-paid {
+  background: #c8e6c9;
+  color: #388e3c;
+}
+caption {
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+/*########################################################## Profile Photo############################################################################################################*/
+.profile {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.profile-image {
+  width: 100%;
+}
+/*---------------------------------------------TRANSACTION PAGE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.view-profile {
+  width: 700px;
+  height: 500px;
+  background-color: #2271ff;
+  margin: 20px auto;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+input {
+  padding: 4px;
+  justify-content: center;
+}
+/*---------------------------------------------ProfilePAGE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.userInfo {
+  display: flex;
+  justify-content: space-around;
+}
+/*################################################################################ CREDIT USER##########################################################################################################*/
+.credit-user {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  background: #2271ff;
+  padding: 40px;
+  height: 500px;
+  width: 400px;
+  border-radius: 14px;
+  z-index: 3;
+}
+.credit {
+  padding: 12px;
+  display: grid;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  border: none;
+}
+.credit::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+}
+.credit-btn {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin: 30px auto;
+  background-color: #2271ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  text-transform: capitalize;
+}
+.deposit {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+/*###############################################################Admin Page#########################################################################################################*/
+
+.admin-nav {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.admin-text {
+  color: #2271ff;
+}
+.admin.text {
+  display: flex;
+  margin-top: 15px;
+  color: #fff;
+  justify-content: center;
+}
+.search-btn {
+  padding: 18px;
+  background: #fff;
+  color: #2271ff;
+  border: none;
+  border-radius: 10px;
+  gap: 0;
+}
+.search-btn i {
+  width: 150%;
+}
+.side-bar-btn {
+  padding: 12px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.side-bar-btn:hover {
+  transform: scale(1.5);
+}
+.side-bar-btn i {
+  width: 250%;
+  color: #2271ff;
+}
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22%;
+  height: 100%;
+  background: #2271ff;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  transform: translate(-100%);
+  transition: 1s ease-in-out;
+}
+.side-bar ul li {
+  list-style: none;
+}
+.side-bar ul li a {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.show-sidebar {
+  transform: translate(0);
+  transition: 1s ease-in-out;
+}
+.search {
+  padding: 8px;
+  border-radius: 14px;
+  border: 2px solid #2271ff;
+  width: 400px;
+}
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.div1 {
+  display: flex;
+  width: 270px;
+  height: 150px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #2271ff;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.9s 0.7 ease-in-out;
+}
+.div1 a {
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.div1 a:hover {
+  transform: scale(1.2);
+}
+
+.activate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2271ff;
+}
+/*########################################################## MEDIA QUERIS############################################################################################################*/
+@media only screen and (max-width: 576px) {
+  .menu {
+    display: grid;
+    padding: 10px;
+    margin-left: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: transparent;
+    background: #fff;
+  }
+  .admin-text {
+    font-size: 16px;
+  }
+  .search {
+    width: 180px;
+  }
+  .side-bar-btn i {
+    background-color: #fff;
+    color: #2271ff;
+    border: none;
+  }
+
+  .side-bar {
+    width: 195px;
+  }
+  i {
+    color: #2271ff;
+    background: #fff;
+    width: 100%;
+  }
+  .menu:hover {
+    transform: rotate(90deg);
+  }
+
+  .nav-bar {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  .nav-bar li a {
+    font-size: 25px;
+    transition: all 0.3s linear;
+  }
+  .balance-text {
+    font-size: 18px;
+  }
+  .acct {
+    height: 150px;
+    width: 350px;
+  }
+  .show-money {
+    margin: 13px 130px;
+  }
+  thead {
+    display: none;
+  }
+  td {
+    display: block;
+  }
+  td:first-child {
+    background: #2271ff;
+    color: #fff;
+    text-align: center;
+  }
+  td:nth-child(2)::before {
+    content: "Account No.";
+  }
+  td:nth-child(3)::before {
+    content: "Account";
+  }
+  td:nth-child(4)::before {
+    content: "Date";
+  }
+  td:nth-child(5)::before {
+    content: "Status";
+  }
+  td:nth-child(6)::before {
+    content: "Amount";
+  }
+  td {
+    text-align: right;
+  }
+  td::before {
+    float: left;
+    margin-right: 3rem;
+  }
+  a {
+    color: #fff;
+  }
+
+  .tech {
+    display: none;
+  }
+  .data {
+    display: block;
+  }
+  .data:first-child {
+    background: #2271ff;
+    color: #fff;
+    text-align: center;
+  }
+  .data:nth-child(2)::before {
+    content: "Account No.";
+  }
+  .data:nth-child(3)::before {
+    content: "Account type";
+  }
+  .data:nth-child(4)::before {
+    content: "Date Created";
+  }
+  .data:nth-child(5)::before {
+    content: "Status";
+  }
+  .data:nth-child(6)::before {
+    content: "Status";
+  }
+  .data {
+    text-align: right;
+  }
+  .data::before {
+    float: left;
+    margin-right: 3rem;
+  }
+  a {
+    color: #fff;
+  }
+
+  .form {
+    width: 400px;
+    height: 1100px;
+  }
+  .entry {
+    display: block;
+  }
+  .label {
+    display: block;
+  }
+  .select {
+    display: flex;
+    flex-direction: row;
+  }
+  .show-links {
+    height: 25rem;
+  }
+  .wrap {
+    display: grid;
+    row-gap: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search {
+    width: 220px;
+  }
+  .nav-bar li a {
+    font-size: 18px;
+  }
+  .acct {
+    height: 150px;
+    width: 370px;
+  }
+  .balance-text {
+    font-size: 20px;
+  }
+  thead {
+    display: none;
+  }
+  td {
+    display: block;
+  }
+  td:first-child {
+    background: #2271ff;
+    color: #fff;
+    text-align: center;
+  }
+  td:nth-child(2)::before {
+    content: "Account No.";
+  }
+  td:nth-child(3)::before {
+    content: "Account";
+  }
+  td:nth-child(4)::before {
+    content: "Date";
+  }
+  td:nth-child(5)::before {
+    content: "Status";
+  }
+  td:nth-child(6)::before {
+    content: "Amount";
+  }
+  td {
+    text-align: right;
+  }
+  td::before {
+    float: left;
+    margin-right: 3rem;
+  }
+
+  .tech {
+    display: none;
+  }
+  .data {
+    display: block;
+  }
+  .data:first-child {
+    background: #2271ff;
+    color: #fff;
+    text-align: center;
+  }
+  .data:nth-child(2)::before {
+    content: "Account No.";
+  }
+  .data:nth-child(3)::before {
+    content: "Account type";
+  }
+  .data:nth-child(4)::before {
+    content: "Date Created";
+  }
+  .data:nth-child(5)::before {
+    content: "Status";
+  }
+  .data:nth-child(6)::before {
+    content: "Status";
+  }
+  .data {
+    text-align: right;
+  }
+  .data::before {
+    float: left;
+    margin-right: 3rem;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .form {
+    width: 400px;
+    height: 1100px;
+  }
+  .entry {
+    display: block;
+  }
+  .label {
+    display: block;
+  }
+  .select {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-bar li a {
+    font-size: 18px;
+  }
+}

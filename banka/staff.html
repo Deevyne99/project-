@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="admin-nav">
+    
+        <h3 class="admin-text"> Admin Dashboard</h3>
+        <form action="">
+            <input type="text" class="search">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+        <button class="side-bar-btn"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="side-bar">
+        <h3 class="admin text"> Admin Dashboard</h3>
+        <ul>
+            <li>
+                <a href="admin.html">Home</a>
+            </li>
+            <li>
+                <a href="activate.html">Activate Account</a>
+            </li>
+            <li>
+                <a href="deactivate.html">Deactivate Account</a>
+            </li>
+            <li>
+                <a href="record.html">view all bank Account</a>
+            </li>
+            <li>
+                <a href="staff.html">Create Staff</a>
+            </li>
+            <li>
+                <a href="delete.html">Delete Account</a>
+            </li>
+            <li>
+                <a href="#">Settings</a>
+            </li>
+            <li>
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+    </div>
+    <div class="activate">
+        <h2>Create Banka Staff </h2>
+    </div>
+    <div class="credit-user">
+        <form action="/create/cashier" method="post">
+            <h3 class="deposit"> Create staff</h3>
+            <input name="firstName" class="credit" type="text" placeholder="firstName ">
+            <input name="lastName" class="credit" type="text" placeholder="lastName">
+            <input name="email" class="credit" type="email" placeholder="Email">
+            
+    
+            <button class="credit-btn">Create Staff</button>
+        </form>
+    </div>
+    <script src="/javascript"></script>
+</body>
+</html>
